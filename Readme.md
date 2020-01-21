@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Егор Рябцев](https://up.htmlacademy.ru/htmlcss/27/user/1269881).
-* Наставник: `Неизвестно`.
+* Наставник: `Артур Трифонов`.https://htmlacademy.ru/profile/wrgraff
 
 ---
 
