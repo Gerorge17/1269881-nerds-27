@@ -14,42 +14,58 @@
           <ul class="main-menu list-flex">
             <li class="menu-item"><a href="#about-studio">Студия</a></li>
             <li class="menu-item"><a href="#clients">Клиенты</a></li>
-            <li class="menu-item"><a href="catalog.html">Магазин</a></li>
+            <li class="menu-item active"><a href="catalog.html">Магазин</a></li>
             <li class="menu-item"><a href="#contats">Контакты</a></li>
-          </ul>
+          </ul> 
 
           <a href="#"  class="header-cart">Корзина</a>
         </nav>
       </header>
-
-      <main>
-         <section class="features">
-          <h2 class="visually-hidden">Услуги</h2>
-          <ul class="feature-list list-flex">
-           <li class="features item">
-            <img src="img/illustration-1.png" alt="Веб-сайты" width="300" height="146">
-             <h3>Веб-сайты</h3>
-              <p>Мир никогда не будет прежним, после того, как увидит ваш сайт!</p>
-               <button type="button" name="button-websites" class="button red">Заказать</button>
-                </li>
-            <li class="features-items">
-              <h3>Приложения</h3>
-              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-              <img src="img/illustration-2.png" alt="Веб-сайты" width="300" height="146">
-              <button type="button" name="button-applications" class="button green">Заказать</button>
-            </li>
-            
-              
-            <li class="features-items">  
-            <h3>Презентации</h3>
-              <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-              <img src="img/illustration-3.png" alt="Веб-сайты" width="300" height="146">
-              <button type="button" name="button-presentations" class="button yellow">Заказать</button>
-               </li>
-               </ul>
-                </section>
-                                                                                      
-</main>
+      
+      <main class="content container-center">
+<h1>Магазин готовых шаблонов</h1>
+         <fieldset class="filter-grids">
+              <legend>Сетка:</legend>
+              <p>
+                <input type="radio" id="grid-adaptive" name="filtergrid" checked>
+                <label for="grid-adaptive">Адаптивная</label>
+              </p>
+              <p>
+                <input type="radio" id="grid-fixed" name="filtergrid">
+                <label for="grid-fixed">Фиксированная</label>
+              </p>
+              <p>
+                <input type="radio" id="grid-fluid" name="filtergrid">
+                <label for="grid-fluid">Резиновая</label>
+              </p>
+            </fieldset>
+         <fieldset class="filter-features">
+              <legend>Особенности:</legend>
+              <p>
+                <input type="checkbox" id="feature-slider" name="filterfeature" checked>
+                <label for="feature-slider">Слайдер</label>
+              </p>
+              <p>
+                <input type="checkbox" id="feature-advantage" name="filterfeature">
+                <label for="feature-advantage">Блок преимуществ</label>
+              </p>
+              <p>
+                <input type="checkbox" id="feature-news" name="filterfeature" checked>
+                <label for="feature-news">Новости</label>
+              </p>
+              <p>
+                <input type="checkbox" id="feature-gallery" name="filterfeature">
+                <label for="feature-gallery">Галерея</label>
+              </p>
+              <p>
+                <input type="checkbox" id="feature-cart" name="filterfeature">
+                <label for="feature-cart">Корзина</label>
+              </p>
+            </fieldset>
+        
+            <button type="submit" name="button" class="button">Показать</button>
+          </form>
+        </section>
                                                                                       
       <footer>
         <section class="footer-social index-columns">
