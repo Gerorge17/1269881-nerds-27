@@ -5,70 +5,77 @@
     <title>HTML Academy: Нёрдс</title>
     </head>
     <body>
-    <header>
-      <div class="container">
-      <div class="menu">
-      <div class="menu__logo">
-          <img src="img/ nerds-logo.png" width="160" height="65" alt="Логотип">
-        </div>
-        <nav class="menu-navigation">
-          <ul class="menu-list">
-          <li class="menu__item">
-          <a href="index.html">Студия</a>
-        </li>
-          <li class="menu__item"
-          <a href="#">Клиенты</a>
-        </li>
-          <li class="menu__item">
-         <a href="catalog.html">Магазин</a>
-          </li>
-        <li class="menu__item">
-          <a href="#">Контакты</a>
-        </li>
-        <ul>
-      </nav>
-      <div class="menu__user">
-        <a class="menu__basket" href="#">"КОРЗИНА"</a>
-      </div>
-   </div>
- </div>
+    <header class="main header">
+      <nav class="main-navigation index-columns container-center">
+          <a href="index.html">
+            <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип компании «nerds»">
+          </a>
+
+          <ul class="main-menu list-flex">
+            <li class="menu-item"><a href="#about-studio">Студия</a></li>
+            <li class="menu-item"><a href="#clients">Клиенты</a></li>
+            <li class="menu-item"><a href="catalog.html">Магазин</a></li>
+            <li class="menu-item"><a href="#contats">Контакты</a></li>
+          </ul>
+
+          <a href="#"  class="header-cart">Корзина</a>
+        </nav>
       </header>
-      <main class="main">
-        <div class="container">
-          <div class="main__list">
-            <div class="main__item">
-              <img src="img/illustration-1.jpg" alt="Веб-сайты" width="300" height="146">
-              <h3>Веб-сайты</h3>
-              <p>Мир никогда не будет прежним, после того, как увидит ваш сайт</p>
-              <a href="#" class="button" button__order button__order--red>Заказать</a>
-            </div>
-            <div class="main__item">
-              <img src="img/illustration-2.jpg" alt="Веб-сайты" width="300" height="146">
+
+      <main>
+         <section class="features">
+          <h2 class="visually-hidden">Услуги</h2>
+          <ul class="feature-list list-flex">
+           <li class="features item">
+            <img src="img/illustration-1.png" alt="Веб-сайты" width="300" height="146">
+             <h3>Веб-сайты</h3>
+              <p>Мир никогда не будет прежним, после того, как увидит ваш сайт!</p>
+               <button type="button" name="button-websites" class="button red">Заказать</button>
+                </li>
+            <li class="features-items">
               <h3>Приложения</h3>
               <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-              <a href="#" class="button button__order button__order--green">
-              Заказать</a>
-            </div>
-            <div class="main__item">
-              <img src="img/illustration-3.jpg" alt="Веб-сайты" width="300" height="146">
-              <h3>Презентации</h3>
+              <img src="img/illustration-2.png" alt="Веб-сайты" width="300" height="146">
+              <button type="button" name="button-applicatons" class="button green">Заказать</button>
+            </li>
+            
+              
+            <li class="features-items">  
+            <h3>Презентации</h3>
               <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-              <a href="#" class="button button__order button__order--yellow">
-              Заказать</a>
-            </div>
+              <img src="img/illustration-3.png" alt="Веб-сайты" width="300" height="146">
+              <button type="button" name="button-presentations" class="button yellow"">Заказать</button>
+               </li>
+                </section>
+                                                                                      
 </main>
+                                                                                      
 
-        <div class="container">
-          <footer class="footer">
-           <div class="footer__contacts">
-            <a href="#" class="footer__item footer__item--vk">Вконтакте</a>
-            <a href="#" class="footer__item footer__item--fb>Фейсбук</a>
-            <a href="#" class="footer__item footer__item--inst>Инстаграмм</a>
-          </div>
-          <div class="footer__text">
-            <p class="footer__text-slogan">Давайте дружить, это выгодно!</p>
-            <p class="footer__text-offer"> Скидка 10% для друзей из социальных сетей</p>
-          </div>
-         </footer>
-        </body>
-      </html>
+        <section class="footer-social index-columns">
+          <h2 class="visually-hidden">Ссылки на социальные сети</h2>
+          <ul class="social-list list-flex">
+            <li>
+              <a class="social social-vk" href="#">
+                <span class="visually-hidden">ВКонтакте</span>
+              </a>
+            </li>
+            <li>
+              <a class="social social-fb" href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a class="social social-instagram" href="#">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+          </ul>
+
+          <p>
+            <strong>Давайте дружить, это выгодно!</strong>
+            Скидка 10% для друзей из социальных сетей.
+          </p>
+        </section>
+      </footer>
+  </body>
+</html>
