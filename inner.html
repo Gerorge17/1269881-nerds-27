@@ -118,33 +118,69 @@
               </li>
             </ul>
           </section>   
-           </main>                                                                     
-      <footer>
-        <section class="footer-social index-columns">
-          <h2 class="visually-hidden">Ссылки на социальные сети</h2>
-          <ul class="social-list list-flex">
-            <li>
-              <a class="social social-vk" href="#">
-                <span class="visually-hidden">ВКонтакте</span>
-              </a>
-            </li>
-            <li>
-              <a class="social social-fb" href="#">
-                <span class="visually-hidden">Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a class="social social-instagram" href="#">
-                <span class="visually-hidden">Instagram</span>
-              </a>
-            </li>
-          </ul>
-
+       
+        <section class="container-paginator">
+            <h2 class="visually-hidden">Навигатор по страницам</h2>
+            <ul class="paginator list-flex">
+              <li class="paginator__item current">1</li>
+              <li class="paginator__item"><a href="#">2</a></li>
+              <li class="paginator__item"><a href="#">3</a></li>
+              <li class="paginator__item"><a href="#">Следущая</a></li>
+            </ul>
+          </section>
+           </main>         
+      
+      <footer class="container-center">
+      <section class="contacts">
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <div class="">
+          <p><b>nёrds design studio</b></p>
           <p>
-            <strong>Давайте дружить, это выгодно!</strong>
-            Скидка 10% для друзей из социальных сетей.
+            191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8
           </p>
-        </section>
-      </footer>
-  </body>
+          <p>тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+          <button type="button" class="btn btn_red" name="btn-contacts">Напишите нам</button>
+          <form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
+            <button type="button" class="btn-feedback-close" name="btn-feedback-close">Закрыть форму</button>
+            <b>Напишите нам</b>
+            <label for="username">Ваше имя</label>
+            <input type="text" id="username" name="username" value="" placeholder="Имя Фамилия" required>
+            <label for="email">Ваш e-mail</label>
+            <input type="email" id="email" name="email" value="" placeholder="email@example.com" required>
+            <label for="text-letter">Текст письма</label>
+            <textarea id="text-letter" name="name" rows="8" cols="80"></textarea>
+            <button type="submit" class="btn btn_red" name="btn-feedback-submit">Отправить</button>
+          </form>
+        </div>
+        <div class="map-location"></div>
+      </section>
+
+      <section class="container-social">
+        <h2 class="visually-hidden">Ссылки на социальные сети</h2>
+        <ul class="social">
+          <li>
+            <a class="social__item social__item_vk" href="#">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li>
+            <a class="social__item social__item_fb" href="#">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a class="social__item social__item_instagram" href="#">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+        </ul>
+        <p>
+          <strong>Давайте дружить, это выгодно!</strong>
+          Скидка 10% для друзей из социальных сетей.
+        </p>
+      </section>
+    </footer>
+     </body>
 </html>
+      
