@@ -146,57 +146,58 @@
           </section>
            </main>         
       
-      <footer class="container-center">
-      <section class="contacts">
-        <h2 class="visually-hidden">Наши контакты</h2>
-        <div class="">
+<footer class="main-footer">
+      <section class="map">
+        <div class="map-info">
           <p><b>nёrds design studio</b></p>
           <p>
-            191186, Санкт-Петербург,<br>
+            191186, Санкт-Петербург, 
             ул. Б. Конюшенная, д. 19/8
+            <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
           </p>
-          <p>тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-          <button type="button" class="btn btn_red" name="btn-contacts">Напишите нам</button>
-          <form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
-            <button type="button" class="btn-feedback-close" name="btn-feedback-close">Закрыть форму</button>
-            <b>Напишите нам</b>
-            <label for="username">Ваше имя</label>
-            <input type="text" id="username" name="username" value="" placeholder="Имя Фамилия" required>
-            <label for="email">Ваш e-mail</label>
-            <input type="email" id="email" name="email" value="" placeholder="email@example.com" required>
-            <label for="text-letter">Текст письма</label>
-            <textarea id="text-letter" name="name" rows="8" cols="80"></textarea>
-            <button type="submit" class="btn btn_red" name="btn-feedback-submit">Отправить</button>
-          </form>
+          <a class="btn" href="">Напишите нам</a>
         </div>
-        <div class="map-location"></div>
+        <img src="img/bg/map2.png" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная, д. 19/8, г. Санкт-Петербург">
       </section>
-
-      <section class="container-social">
-        <h2 class="visually-hidden">Ссылки на социальные сети</h2>
-        <ul class="social">
-          <li>
-            <a class="social__item social__item_vk" href="#">
-              <span class="visually-hidden">ВКонтакте</span>
-            </a>
-          </li>
-          <li>
-            <a class="social__item social__item_fb" href="#">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li>
-            <a class="social__item social__item_instagram" href="#">
-              <span class="visually-hidden">Instagram</span>
-            </a>
-          </li>
-        </ul>
-        <p>
-          <strong>Давайте дружить, это выгодно!</strong>
-          Скидка 10% для друзей из социальных сетей.
-        </p>
-      </section>
-    </footer>
-     </body>
+      <section class="write-us">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <p>Напишите нам</p>
+        <form action="https://echo.htmlacademy.ru" method="POST">
+          <p>
+            <label for="user-name">Ваше имя:</label>
+            <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+            <label for="user-email">Ваш e-mail:</label>
+            <input id="user-email" type="email" name="email" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="comment-field">Тект письма:</label>
+            <textarea name="comment" id="comment-field" rows="5" placeholder="В свободной форме"></textarea>
+          </p>
+          <button class="btn btn-write-away" type="submit">Отправить</button>
+        </form>
+        <button class="btn-close" type="button">Закрыть</button>
+      </section>                                                        
+      <footer>
+        
+          <section class="footer-social index-columns">
+          <h2 class="visually-hidden">Ссылки на социальные сети</h2>
+          <ul class="social-list list-flex">
+            <li>
+              <a class="social social-vk" href="#">
+                <span class="visually-hidden">ВКонтакте</span>
+              </a>
+            </li>
+            <li>
+              <a class="social social-fb" href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a class="social social-instagram" href="#">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+          </ul>
+      </footer>
+  </body>
 </html>
-      
