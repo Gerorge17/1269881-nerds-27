@@ -29,10 +29,11 @@
           <h2 class="visually-hidden">Фильтр для выбора шаблона</h2>
           <form class="form-filter" action="https://echo.htmlacademy.ru" method="post">
             <span>Стоимость</span>
-            <div class="price-slider">
+         /*   <div class="price-slider">
               <input type="range" name="slidermin" value="0" min="0" max="20000" step="5000">
               <input type="range" name="slidermax" value="15000" min="5000" max="20000" step="5000">
               <p>
+                */
                 <label for="price-min">От</label>
                 <input type="text" id="price-min" name="price-min" value="0">
                 <label for="price-max">До</label>
@@ -81,6 +82,38 @@
         
             <button type="submit" name="button" class="button">Показать</button>
           
+             <section class="temlates">
+          <h2 class="visually-hidden">Список шаблонов</h2>
+          <section class="sort">
+            <h3 class="visually-hidden">Сортировка шаблонов</h3>
+            <span>Сортировать:</span>
+            <form class="" action="https://echo.htmlacademy.ru" method="post">
+              <ul class="sort__list">
+                <li class="sort__item">
+                  <input type="radio" id="sort__item__price" name="sort-price" checked>
+                  <label for="sort__item__price">По цене</label>
+                </li>
+                <li class="sort__item">
+                  <input type="radio" id="sort__item__type" name="sort-type">
+                  <label for="sort__item__type">По типу</label>
+                </li>
+                <li class="sort__item">
+                  <input type="radio" id="sort__item__name" name="sort-name">
+                  <label for="sort__item__name">По названию</label>
+                </li>
+                <li class="sort__item">
+                  <input type="radio" id="sort__item__ascending" name="sort-ascending" checked>
+                  <label for="sort__item__ascending">По возрастанию</label>
+                </li>
+                <li class="sort__item">
+                  <input type="radio" id="sort__item__descending" name="sort-descending">
+                  <label for="sort__item__descending">По убыванию</label>
+                </li>
+              </ul>
+            </form>
+          </section>
+            
+            
              <section>
             <h3 class="visually-hidden">Sedona</h3>
             <ul class="websites-list list-flex">
