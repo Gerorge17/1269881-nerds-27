@@ -28,7 +28,8 @@
         <section class="container-filter">
           <h2 class="visually-hidden">Фильтр для выбора шаблона</h2>
           <form class="form-filter" action="https://echo.htmlacademy.ru" method="post">
-            <span>Стоимость</span>
+          <fieldset>
+            <legend>Стоимость</legend>
          <!--   <div class="price-slider">
               <input type="range" name="slidermin" value="0" min="0" max="20000" step="5000">
               <input type="range" name="slidermax" value="15000" min="5000" max="20000" step="5000">
@@ -36,46 +37,49 @@
             <p>
                 <label for="price-min">От</label>
                 <input type="text" id="price-min" name="price-min" value="0">
+              </p>
+            <p>
                 <label for="price-max">До</label>
                 <input type="text" id="price-max" name="price-max" value="15000">
               </p>
             </div>
+            </fieldset>
         
          <fieldset class="filter-grids">
            <legend>Сетка:</legend>
               <p>
-                <input type="radio" id="grid-adaptive" name="filtergrid" checked>
+                <input type="radio" id="grid-adaptive" name="filtergrid"  value="adaptive" checked>
                 <label for="grid-adaptive">Адаптивная</label>
               </p>
               <p>
-                <input type="radio" id="grid-fixed" name="filtergrid">
+                <input type="radio" id="grid-fixed" name="filtergrid" value="fixed">
                 <label for="grid-fixed">Фиксированная</label>
               </p>
               <p>
-                <input type="radio" id="grid-fluid" name="filtergrid">
+                <input type="radio" id="grid-fluid" name="filtergrid" value="fluid">
                 <label for="grid-fluid">Резиновая</label>
               </p>
             </fieldset>
          <fieldset class="filter-features">
               <legend>Особенности:</legend>
               <p>
-                <input type="checkbox" id="feature-slider" name="filterfeature" checked>
+                <input type="checkbox" id="feature-slider" name="slider" checked>
                 <label for="feature-slider">Слайдер</label>
               </p>
               <p>
-                <input type="checkbox" id="feature-advantage" name="filterfeature">
+                <input type="checkbox" id="feature-advantage" name="advantage">
                 <label for="feature-advantage">Блок преимуществ</label>
               </p>
               <p>
-                <input type="checkbox" id="feature-news" name="filterfeature" checked>
+                <input type="checkbox" id="feature-news" name="news" checked>
                 <label for="feature-news">Новости</label>
               </p>
               <p>
-                <input type="checkbox" id="feature-gallery" name="filterfeature">
+                <input type="checkbox" id="feature-gallery" name="gallery">
                 <label for="feature-gallery">Галерея</label>
               </p>
               <p>
-                <input type="checkbox" id="feature-cart" name="filterfeature">
+                <input type="checkbox" id="feature-cart" name="cart">
                 <label for="feature-cart">Корзина</label>
               </p>
             </fieldset>
@@ -90,29 +94,28 @@
             <form class="" action="https://echo.htmlacademy.ru" method="post">
               <ul class="sort__list">
                 <li class="sort__item">
-                  <input type="radio" id="sort__item__price" name="sort-price" checked>
+                  <input type="radio" id="sort__item__price" name="sort-price" value="price" checked>
                   <label for="sort__item__price">По цене</label>
                 </li>
                 <li class="sort__item">
-                  <input type="radio" id="sort__item__type" name="sort-type">
+                  <input type="radio" id="sort__item__type" name="sort-type" value="type">
                   <label for="sort__item__type">По типу</label>
                 </li>
                 <li class="sort__item">
-                  <input type="radio" id="sort__item__name" name="sort-name">
+                  <input type="radio" id="sort__item__name" name="sort-name" value="name">
                   <label for="sort__item__name">По названию</label>
                 </li>
-                <li class="sort__item">
-                  <input type="radio" id="sort__item__ascending" name="sort-ascending" checked>
-                  <label for="sort__item__ascending">По возрастанию</label>
                 </li>
                 <li class="sort__item">
-                  <input type="radio" id="sort__item__descending" name="sort-descending">
+                  <input type="radio" id="sort__item__descending" name="sort-descending" value="descending" checked>
                   <label for="sort__item__descending">По убыванию</label>
                 </li>
+                <li class="sort__item">
+                  <input type="radio" id="sort__item__ascending" name="sort-ascending" value="ascending">
+                  <label for="sort__item__ascending">По возрастанию</label>
               </ul>
             </form>
           </section>
-            
             
              <section>
             <h3 class="visually-hidden">Sedona</h3>
