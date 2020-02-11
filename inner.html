@@ -30,25 +30,13 @@
           <form class="form-filter" action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
             <legend>Стоимость</legend>
-         <div class="filter__block filter__block--slider">
-  <div class="filter__head">цена изделия</div>
-  <div class="filter__slider">
-    <div class="range__zero">0</div>
-    <div id="filter__range"></div>
-  </div>
-  <div class="filter__cost table">
-    <div class="table-cell"> <span>от</span></div>
-    <div class="table-cell">
-     <input id="priceMin" type="text" value="0" class="form-control">
-    </div>
-    <div class="table-cell"><span>до</span></div>
-    <div class="table-cell">
-      <input id="priceMax" type="text" value="15000" class="form-control">
-    </div>
-    <div class="table-cell"><span>руб</span></div>
-  </div>
-</div>
-
+        <div class="range-filter">
+          <div class=""range-controls>
+            <div class="scale">
+              <div class="bar" style="margin-left:10% width:60%"></div>
+          </div>
+        <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
             <p>
                 <label for="price-min">От</label>
                 <input type="text" id="price-min" name="price-min" value="0">
