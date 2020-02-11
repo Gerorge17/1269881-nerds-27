@@ -30,18 +30,20 @@
           <form class="form-filter" action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
             <legend>Стоимость</legend>
-<div class="polzunok-container-5">
-    <input type="text" class="polzunok-input-5-left"/>
-    <input type="text" class="polzunok-input-5-right "/>
-    <div class="polzunok-5"></div>
-</div>
-<div class="toggle toggle-min"></div>
-            <div class="toggle toggle-max"></div>
-            <p>
+<div class="filter">
+  <div class="filter-range-wrapper">
+    <div class="filter-range">
+      <div class="filter-range-scale">
+        <div class="filter-range-bar"></div>
+      </div>
+      <button class="filter-range-handle min"></button>
+      <button class="filter-range-handle max" style="left: 75%;"></button>
+    </div>
+  </div>
+            
+  <p>
                 <label for="price-min">От</label>
                 <input type="text" id="price-min" name="price-min" value="0">
-              </p>
-            <p>
                 <label for="price-max">До</label>
                 <input type="text" id="price-max" name="price-max" value="15000">
               </p>
